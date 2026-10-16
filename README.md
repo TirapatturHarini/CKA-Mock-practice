@@ -23,5 +23,18 @@ bash scripts/run-question.sh "Question-9 Network-Policy" to apply the setup and 
 | Question-20 | Helm release history and rollback | — |
 | Question-21 | Helm chart linting and template rendering | — |
 | Question-22 | Helm release status, upgrade, and uninstall | — |
+| Question-23 | Kustomize base, resources, namespace, and labels | — |
+| Question-24 | Kustomize overlays for dev and production | — |
+| Question-25 | Kustomize strategic-merge patches | — |
+| Question-26 | Kustomize ConfigMap and Secret generators | — |
+| Question-27 | Gateway and HTTPRoute fundamentals | — |
+| Question-28 | HTTPRoute host/path/header/method matching | — |
+| Question-29 | HTTPRoute filters and weighted backends | — |
+| Question-30 | Cross-namespace routes and ReferenceGrant | — |
+| Question-31 | Gateway TLS termination and HTTP redirect | — |
+| Question-32 | Gateway listener route attachment with namespace selectors | — |
 
 More questions can be added by copying the template folder and dropping in the three bash files from the original collection.
+
+## Kustomize and Gateway API labs
+Kustomize labs use `kubectl kustomize` and `kubectl apply -k`; their starter files are prepared under `~/cka-kustomize-*` by each lab setup script. Gateway API labs install the standard Gateway API CRDs and use a placeholder `GatewayClass` controller. They are designed to practice resource specifications, attachment, references, filters, and status inspection; a Gateway controller/data plane is not installed, so live HTTP routing is not expected.

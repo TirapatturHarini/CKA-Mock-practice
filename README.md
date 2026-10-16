@@ -33,8 +33,16 @@ bash scripts/run-question.sh "Question-9 Network-Policy" to apply the setup and 
 | Question-30 | Cross-namespace routes and ReferenceGrant | — |
 | Question-31 | Gateway TLS termination and HTTP redirect | — |
 | Question-32 | Gateway listener route attachment with namespace selectors | — |
+| Question-33 | JSONPath basics: fields, indexes, ranges, and literals | — |
+| Question-34 | JSONPath filters, nested arrays, and escaped keys | — |
+| Question-35 | kubectl custom columns, headers, and sorting | — |
+| Question-36 | Timed JSONPath and custom-columns exam drills | — |
+| Question-37 | JSONPath expression troubleshooting | — |
 
 More questions can be added by copying the template folder and dropping in the three bash files from the original collection.
 
 ## Kustomize and Gateway API labs
 Kustomize labs use `kubectl kustomize` and `kubectl apply -k`; their starter files are prepared under `~/cka-kustomize-*` by each lab setup script. Gateway API labs install the standard Gateway API CRDs and use a placeholder `GatewayClass` controller. They are designed to practice resource specifications, attachment, references, filters, and status inspection; a Gateway controller/data plane is not installed, so live HTTP routing is not expected.
+
+## JSONPath labs
+JSONPath fixtures are created in namespace `jsonpath-lab` by `scripts/prepare-jsonpath-lab.sh`. The labs cover field paths, list items, indexes, wildcards, `range`/`end`, filters, nested arrays, escaped label/annotation keys, `custom-columns`, `custom-columns-file`, `--no-headers`, and `--sort-by`.

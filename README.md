@@ -17,6 +17,11 @@ bash scripts/run-question.sh "Question-9 Network-Policy" to apply the setup and 
 ## Available Questions
 | Question | Topic | Video |
 |----------|-------|-------|
-| Question-01 | Install Argo CD using Helm without CRDs | https://youtu.be/8GzJ-x9ffE0 |
+| Question-2 | Install Argo CD using Helm without CRDs | https://youtu.be/e0YGRSjb8CU |
+| Question-18 | Helm repository search and chart installation | — |
+| Question-19 | Helm values and release upgrade | — |
+| Question-20 | Helm release history and rollback | — |
+| Question-21 | Helm chart linting and template rendering | — |
+| Question-22 | Helm release status, upgrade, and uninstall | — |
 
 More questions can be added by copying the template folder and dropping in the three bash files from the original collection.
